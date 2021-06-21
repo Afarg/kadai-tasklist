@@ -17,6 +17,17 @@ Rails.application.routes.draw do
     
     root to: 'tasks#index'
     
-    #上記と同じコード(意味)
+    get 'login', to: 'sessions#new'
+    post 'login', to: 'sessions#create'
+    delete 'logout', to: 'sessions#destroy'
+    
+    get 'signup', to: 'users#new'
+    
+   
+    #上記のコメント行と同じコード(意味)
     resources :tasks
+    
+    resources :users, only: [:index, :show, :create]
+    
+    
 end
