@@ -27,7 +27,7 @@ Rails.application.routes.draw do
     #上記のコメント行と同じコード(意味)
     resources :tasks
     
-    resources :users, only: [:index, :show, :create]
+    resources :users, only: [:create]
     
     
 end
