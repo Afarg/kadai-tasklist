@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    #以下のコメント行はresource :tasks内のroutes(復習のために残しています。不要ではありません。)
     
     # get 'tasks/:id', to: 'tasks#show'
     # post 'tasks', to: 'tasks#create'
